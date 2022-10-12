@@ -9,6 +9,6 @@ To use this web-application it is fairly easy. Just follow the link into the web
 ## Usage
 To use this is very simple the user will be welcome to a page with two button one to play and one to see the highscore from past game. Once the user hits play the user will be prompt with a total of 4 questions to answer and afterwards the user will be propmt to save the score by typing ther name. After that the user can eithe play again or go to the homepage again.
 
-Here is the link: 
+Here is the link: https://janvierb1.github.io/Quiz-App/
 
 ![alt text](/assets/images/Web%20capture_11-10-2022_234423_.jpg)
