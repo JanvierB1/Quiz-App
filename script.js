@@ -20,27 +20,27 @@ let questions = [
         answer: 2,
     },
     {
-        question: 'what is 2 + 13?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '15',
-        choice4: '41',
+        question: 'What does HTTPS Stand for?',
+        choice1: 'Hyper Text Tranfer Protocol',
+        choice2: 'Hype Tranfer Protocol',
+        choice3: 'Hyper Text Transfer Protocol Secure',
+        choice4: 'Hyper Text Protocol Sceure Tranfer',
         answer: 3,
     },
     {
-        question: 'what is 39 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '15',
-        choice4: '41',
+        question: 'What does WWW Stand for?',
+        choice1: 'Wide World Web',
+        choice2: 'Web Wide World',
+        choice3: 'Web World Wide',
+        choice4: 'World Wide Web',
         answer: 4,
     },
     {
-        question: 'what is 13 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '15',
-        choice4: '41',
+        question: 'Is Coding stressful?',
+        choice1: 'A little',
+        choice2: 'Maybe',
+        choice3: 'YESSS! But fun!',
+        choice4: 'NAhhh',
         answer: 3,
     }
 ]
@@ -54,6 +54,17 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 }
+
+var count = 15;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML
+    alert("You're out of time!");
+  }
+}, 1000);
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
